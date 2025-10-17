@@ -80,14 +80,14 @@ function  start(){
     let correct;
 keylistener=document.addEventListener("keydown",(e)=>{  //READING KEYS
 
-    event.preventDefault();
+    e.preventDefault();
 
 
     if (e.key.length>1 && e.key !== "Backspace") return ;     //skips unnessesary keys except backspace 
     const currentSpan = spans[currentIdx];
 
     if (e.key === "Backspace"){
-        const backspaceSound= new Audio(correctSoundsrc);
+        const backspaceSound= new Audio(backspaceSoundsrc);
         backspaceSound.play();
         if(currentIdx>0){
             currentIdx--;
@@ -181,6 +181,7 @@ keylistener=document.addEventListener("keydown",(e)=>{  //READING KEYS
 
 
 }
+
 
 
 
