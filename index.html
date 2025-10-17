@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+    </style>
+</head>
+<body>
+    <img id="topCloud" src="/top cloud.png">
+
+    <h1 id="heading">Check Your Typing SPEED !!!</h1>
+    <div id="timer-div">
+        <button id="30sec" class="timers">30 sec</button>
+        <button id="1min" class="timers">1 min</button>
+        <button id="2min" class="timers">2 min</button>
+        <button id="3min" class="timers">3 min</button>
+    </div>
+    <h3>click the button to start the test</h3>
+    <button id="startBtn">Start</button>
+    <p id="countDown"></p>
+    
+    <div id="testText">
+        <span>L</span><span>e</span><span>a</span><span>r</span><span>n</span><span>i</span><span>n</span><span>g</span><span> </span><span>t</span><span>o</span><span> </span><span>t</span><span>y</span><span>p</span><span>e</span><span> </span><span>q</span><span>u</span><span>i</span><span>c</span><span>k</span><span>l</span><span>y</span><span> </span><span>i</span><span>s</span><span> </span><span>a</span><span> </span><span>v</span><span>a</span><span>l</span><span>u</span><span>a</span><span>b</span><span>l</span><span>e</span><span> </span><span>s</span><span>k</span><span>i</span><span>l</span><span>l</span><span> </span><span>t</span><span>h</span><span>a</span><span>t</span><span> </span><span>s</span><span>a</span><span>v</span><span>e</span><span>s</span><span> </span><span>t</span><span>i</span><span>m</span><span>e</span><span> </span><span>a</span><span>n</span><span>d</span><span> </span><span>i</span><span>m</span><span>p</span><span>r</span><span>o</span><span>v</span><span>e</span><span>s</span><span> </span><span>f</span><span>o</span><span>c</span><span>u</span><span>s</span><span>.</span><span> </span><span>W</span><span>h</span><span>e</span><span>n</span><span> </span><span>y</span><span>o</span><span>u</span><span> </span><span>p</span><span>r</span><span>a</span><span>c</span><span>t</span><span>i</span><span>c</span><span>e</span><span> </span><span>r</span><span>e</span><span>g</span><span>u</span><span>l</span><span>a</span><span>r</span><span>l</span><span>y</span><span>,</span><span> </span><span>y</span><span>o</span><span>u</span><span>r</span><span> </span><span>h</span><span>a</span><span>n</span><span>d</span><span>s</span><span> </span><span>b</span><span>e</span><span>g</span><span>i</span><span>n</span><span> </span><span>t</span><span>o</span><span> </span><span>r</span><span>e</span><span>m</span><span>e</span><span>m</span><span>b</span><span>e</span><span>r</span><span> </span><span>t</span><span>h</span><span>e</span><span> </span><span>m</span><span>o</span><span>v</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span><span> </span><span>o</span><span>f</span><span> </span><span>e</span><span>a</span><span>c</span><span>h</span><span> </span><span>l</span><span>e</span><span>t</span><span>t</span><span>e</span><span>r</span><span>,</span><span> </span><span>a</span><span>n</span><span>d</span><span> </span><span>y</span><span>o</span><span>u</span><span>r</span><span> </span><span>e</span><span>y</span><span>e</span><span>s</span><span> </span><span>s</span><span>t</span><span>a</span><span>y</span><span> </span><span>o</span><span>n</span><span> </span><span>t</span><span>h</span><span>e</span><span> </span><span>s</span><span>c</span><span>r</span><span>e</span><span>e</span><span>n</span><span> </span><span>i</span><span>n</span><span>s</span><span>t</span><span>e</span><span>a</span><span>d</span><span> </span><span>o</span><span>f</span><span> </span><span>t</span><span>h</span><span>e</span><span> </span><span>k</span><span>e</span><span>y</span><span>b</span><span>o</span><span>a</span><span>r</span><span>d</span><span>.</span><span> </span><span>T</span><span>h</span><span>i</span><span>s</span><span> </span><span>a</span><span>l</span><span>l</span><span>o</span><span>w</span><span>s</span><span> </span><span>y</span><span>o</span><span>u</span><span> </span><span>t</span><span>o</span><span> </span><span>w</span><span>r</span><span>i</span><span>t</span><span>e</span><span> </span><span>e</span><span>s</span><span>s</span><span>a</span><span>y</span><span>s</span><span>,</span><span> </span><span>c</span><span>o</span><span>d</span><span>e</span><span> </span><span>p</span><span>r</span><span>o</span><span>g</span><span>r</span><span>a</span><span>m</span><span>s</span><span>,</span><span> </span><span>o</span><span>r</span><span> </span><span>s</span><span>e</span><span>n</span><span>d</span><span> </span><span>m</span><span>e</span><span>s</span><span>s</span><span>a</span><span>g</span><span>e</span><span>s</span><span> </span><span>w</span><span>i</span><span>t</span><span>h</span><span>o</span><span>u</span><span>t</span><span> </span><span>h</span><span>e</span><span>s</span><span>i</span><span>t</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span>.</span>
+        <span>T</span><span>y</span><span>p</span><span>i</span><span>n</span><span>g</span><span> </span><span>f</span><span>a</span><span>s</span><span>t</span><span> </span><span>i</span><span>s</span><span> </span><span>g</span><span>o</span><span>o</span><span>d</span><span>,</span><span> </span><span>b</span><span>u</span><span>t</span><span> </span><span>a</span><span>c</span><span>c</span><span>u</span><span>r</span><span>a</span><span>c</span><span>y</span><span> </span><span>i</span><span>s</span><span> </span><span>b</span><span>e</span><span>t</span><span>t</span><span>e</span><span>r</span><span>.</span><span> </span><span>A</span><span>l</span><span>w</span><span>a</span><span>y</span><span>s</span><span> </span><span>k</span><span>e</span><span>e</span><span>p</span><span> </span><span>y</span><span>o</span><span>u</span><span>r</span><span> </span><span>e</span><span>y</span><span>e</span><span>s</span><span> </span><span>o</span><span>n</span><span> </span><span>t</span><span>h</span><span>e</span><span> </span><span>s</span><span>c</span><span>r</span><span>e</span><span>e</span><span>n</span><span>.</span><span> </span><span>U</span><span>s</span><span>e</span><span> </span><span>a</span><span>l</span><span>l</span><span> </span><span>f</span><span>i</span><span>n</span><span>g</span><span>e</span><span>r</span><span>s</span><span> </span><span>i</span><span>n</span><span>s</span><span>t</span><span>e</span><span>a</span><span>d</span><span> </span><span>o</span><span>f</span><span> </span><span>j</span><span>u</span><span>s</span><span>t</span><span> </span><span>t</span><span>w</span><span>o</span><span>.</span><span> </span><span>K</span><span>e</span><span>e</span><span>p</span><span> </span><span>y</span><span>o</span><span>u</span><span>r</span><span> </span><span>b</span><span>a</span><span>c</span><span>k</span><span> </span><span>s</span><span>t</span><span>r</span><span>a</span><span>i</span><span>g</span><span>h</span><span>t</span><span> </span><span>a</span><span>n</span><span>d</span><span> </span><span>w</span><span>r</span><span>i</span><span>s</span><span>t</span><span>s</span><span> </span><span>r</span><span>e</span><span>l</span><span>a</span><span>x</span><span>e</span><span>d</span><span>.</span><span> </span><span>D</span><span>o</span><span> </span><span>n</span><span>o</span><span>t</span><span> </span><span>p</span><span>o</span><span>u</span><span>n</span><span>d</span><span> </span><span>t</span><span>h</span><span>e</span><span> </span><span>k</span><span>e</span><span>y</span><span>s</span><span> </span><span>t</span><span>o</span><span>o</span><span> </span><span>h</span><span>a</span><span>r</span><span>d</span><span>.</span><span> </span><span>T</span><span>a</span><span>k</span><span>e</span><span> </span><span>b</span><span>r</span><span>e</span><span>a</span><span>k</span><span>s</span><span> </span><span>t</span><span>o</span><span> </span><span>a</span><span>v</span><span>o</span><span>i</span><span>d</span><span> </span><span>s</span><span>t</span><span>r</span><span>a</span><span>i</span><span>n</span><span>.</span>
+    </div>
+    <div id="scores">
+        <div id="stopwatch">
+            <H2 id="watchTime">???</H2>
+        </div>
+        <div id="wrp" class="score-box">
+            <H4 class="score-heading">SPEED</H4>
+            <H2 id="score-wrp" class="score">???</H2>
+        </div>
+        <div id="accuracy" class="score-box">
+            <H4 class="score-heading">ACCURACY</H4>
+            <H2 id="score-accuracy" class="score">???</H2>
+        </div>
+    </div>
+       <img id="btmCloud" src="/bottom cloud.png">
+    <script src="typer.js"></script>
+</body>
+</html>
