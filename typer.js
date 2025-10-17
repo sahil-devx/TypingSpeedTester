@@ -10,9 +10,9 @@ let startBtn = document.getElementById("startBtn");
 let watchTime= document.getElementById("watchTime");
 let stopwatch= document.getElementById("stopwatch");
 let countDown= document.getElementById("countDown");
-const correctSoundsrc ="/correct.wav";
-const missSoundsrc ="/miss.wav";
-const backspaceSoundsrc ="/backspace.wav";
+const correctSoundsrc ="correct.wav";
+const missSoundsrc ="miss.wav";
+const backspaceSoundsrc ="backspace.wav";
 
 let curCount = inCount;
 console.log("count from direct",curCount)
@@ -181,6 +181,7 @@ keylistener=document.addEventListener("keydown",(e)=>{  //READING KEYS
 
 
 }
+
 
 
 
