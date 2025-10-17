@@ -80,43 +80,44 @@ function  start(){
     let correct;
     keylistener=function(e){  //READING KEYS
 
-    e.preventDefault();
+        e.preventDefault();
 
 
-    if (e.key.length>1 && e.key !== "Backspace") return ;     //skips unnessesary keys except backspace 
-    const currentSpan = spans[currentIdx];
+        if (e.key.length>1 && e.key !== "Backspace") return ;     //skips unnessesary keys except backspace 
+        const currentSpan = spans[currentIdx];
 
-    if (e.key === "Backspace"){
-        const backspaceSound= new Audio(backspaceSoundsrc);
-        backspaceSound.play();
-        if(currentIdx>0){
-            currentIdx--;
-            spans[currentIdx].style.color="black";
+        if (e.key === "Backspace"){
+            const backspaceSound= new Audio(backspaceSoundsrc);
+            backspaceSound.play();
+            if(currentIdx>0){
+                currentIdx--;
+                spans[currentIdx].style.color="black";
+            }
+            return;
         }
-        return;
-    }
-    if (e.key === currentSpan.textContent){
-        currentSpan.style.color="green";
-        const correctSound = new Audio(correctSoundsrc);
-        correctSound.play();
-    }
-    else{
-        currentSpan.style.color="red";
-        const missSound = new Audio(missSoundsrc);
-        missSound.play();
-    }
+        if (e.key === currentSpan.textContent){
+            currentSpan.style.color="green";
+            const correctSound = new Audio(correctSoundsrc);
+            correctSound.play();
+        }
+        else{
+            currentSpan.style.color="red";
+            const missSound = new Audio(missSoundsrc);
+            missSound.play();
+        }
 
 
-    if(tempTime!==0){      //if stopwatch is not 0 then auto aligns spans with top of viewport while typing
-      currentSpan.scrollIntoView({
-            block: "start",   
-            behavior: "smooth" 
-     });
-   }
-   currentIdx++;
-});
-    document.removeEventListener("keydown", Keylistener);
-    document.addEventListener("keydown", Keylistener);
+        if(tempTime!==0){      //if stopwatch is not 0 then auto aligns spans with top of viewport while typing
+            currentSpan.scrollIntoView({
+                block: "start",   
+                behavior: "smooth" 
+            });
+        }
+            currentIdx++;
+    }
+
+    document.removeEventListener("keydown", keylistener);
+    document.addEventListener("keydown", keylistener);
 
 
     stopwatch.classList.remove("deactive");
@@ -174,27 +175,8 @@ function  start(){
         stopwatch.classList.add("deactive");      //adds stopwathc out-animation
 
         window.location.hash="wrp";   //teleporting to score section
-        document.removeEventListener("keydown", Keylistener);
+        document.removeEventListener("keydown", keylistener);
       
     },timer)
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
