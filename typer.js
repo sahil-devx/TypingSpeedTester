@@ -174,13 +174,14 @@ document.addEventListener("keydown", typingHandler);
         stopwatch.classList.add("deactive");      //adds stopwathc out-animation
 
         window.location.hash="wrp";   //teleporting to score section
-        document.removeEventListener("keydown", typingHandler);
+        document.removeEventListener("keydown", Keylistener);
 
     },timer)
 
 
 
 }
+
 
 
 
