@@ -29,7 +29,7 @@ body{
     align-items: center;
     flex-direction: column;
     background-color: #85C7F2;
-
+    width:100%;
 }
 h1{
 
@@ -54,11 +54,12 @@ h3{
     justify-content: space-evenly ;
     background-color: rgba(89, 135, 173, 0.3);
     background-blend-mode:darken ;
-    width:auto;
+    width:80vw;
+    max-width:450px;
     height: 100px;
 }
 .timers{
-    width: 60px;
+    width:60px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -66,7 +67,6 @@ h3{
     padding: 0;
     background-color: rgb(255, 202, 28);
     border-width: 2px;
-    margin: 30px;
     border-radius: 5px;
     border-color:black;
 
@@ -110,9 +110,11 @@ h3{
 }
 #testText{
     padding: 30px;
+    align-self:center;
     text-align: center;
     font-size: clamp(1rem, 5vw, 3rem); 
     width:fit-content ;
+    max-width:80vw;
     height: fit-content;
     margin: 0;
     background-color: lightgray;
@@ -125,10 +127,12 @@ h3{
     scroll-margin-top:-40px;
 }
 .score-box{
+    align-self:center;
+    justify-self:center;
     width: 200px;
     height : 100px;
     margin:30px;
-        box-shadow: 10px 10px 20px black ;
+    box-shadow: 10px 10px 20px black ;
 }
 .score-heading{
     display: flex;
