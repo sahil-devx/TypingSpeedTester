@@ -115,7 +115,7 @@ function  start(){
    }
    currentIdx++;
 });
-    document.removeEventListener("keydown", keylistener);
+    document.removeEventListener("keydown", Keylistener);
     document.addEventListener("keydown", Keylistener);
 
 
@@ -181,6 +181,7 @@ function  start(){
 
 
 }
+
 
 
 
