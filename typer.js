@@ -115,8 +115,8 @@ function  start(){
    }
    currentIdx++;
 });
-    document.removeEventListener("keydown", keylistener);
-    document.addEventListener("keydown", keylistener);
+    document.removeEventListener("keydown", Keylistener);
+    document.addEventListener("keydown", Keylistener);
 
 
     stopwatch.classList.remove("deactive");
@@ -174,15 +174,11 @@ function  start(){
         stopwatch.classList.add("deactive");      //adds stopwathc out-animation
 
         window.location.hash="wrp";   //teleporting to score section
-        document.removeEventListener("keydown", keylistener);
+        document.removeEventListener("keydown", Keylistener);
       
     },timer)
 
-
-
 }
-
-
 
 
 
