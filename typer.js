@@ -78,7 +78,7 @@ let state;
 function  start(){
     
     let correct;
-keylistener=document.addEventListener("keydown",(e)=>{  //READING KEYS
+    keylistener=function(e){  //READING KEYS
 
     e.preventDefault();
 
@@ -116,7 +116,7 @@ keylistener=document.addEventListener("keydown",(e)=>{  //READING KEYS
    currentIdx++;
 });
 
-
+document.addEventListener("keydown", typingHandler);
 
 
     stopwatch.classList.remove("deactive");
@@ -174,13 +174,14 @@ keylistener=document.addEventListener("keydown",(e)=>{  //READING KEYS
         stopwatch.classList.add("deactive");      //adds stopwathc out-animation
 
         window.location.hash="wrp";   //teleporting to score section
-        document.removeEventListener(keylistener);
+        document.removeEventListener("keydown", typingHandler);
 
     },timer)
 
 
 
 }
+
 
 
 
